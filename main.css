@@ -77,24 +77,7 @@ p{
     font-size: 150%;
     transition: all 0.5s ease;
     }
-#fb_iframe_widget{
-  float: left;
-  text-decoration: underline;
-  text-shadow: 0 0 72px rgba(255, 233, 233, 0.8);
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  border: 3px solid rgb(21, 21, 21);
-  background: rgba(21, 21, 21,0.98);
-  box-shadow: -6px 6px rgba(143, 3, 0, 0.8);
-  border: 3px solid rgba(21, 21, 21,0.98);
-  color:#fff;
-  box-sizing:inherit;
-  padding: 10%; 
 
-}
 /*navagation bar responsive & animation bundle*/
  @media screen and (max-width: 800px) {
     .nav a:not(:first-child) {display: none;}
@@ -250,23 +233,6 @@ p{
     margin-right: auto;
     padding: 8%;
     font-size: auto;}
-    #fb-page{
-  text-decoration: underline;
-  text-shadow: 0 0 72px rgba(255, 233, 233, 0.8);
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  border: 3px solid rgb(21, 21, 21);
-  background: rgba(21, 21, 21,0.98);
-  box-shadow: -6px 6px rgba(143, 3, 0, 0.8);
-  border: 3px solid rgba(21, 21, 21,0.98);
-  color:#fff;
-  margin-top:5%; 
-  width:640px;
-
-}
   
   .ico{
         background-image: url('./img/logo-white.png'); 
@@ -285,7 +251,7 @@ p{
 }
   h1{
   margin: 0;
-  font-size: 165%
+  font-size: 150%
 } 
   }
 }
