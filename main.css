@@ -163,6 +163,22 @@ p{
     transition: all 0.1s ease-in-out;
     
   }
+  #fb-page{
+  text-decoration: underline;
+  text-shadow: 0 0 72px rgba(255, 233, 233, 0.8);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid rgb(21, 21, 21);
+  background: rgba(21, 21, 21,0.98);
+  box-shadow: -6px 6px rgba(143, 3, 0, 0.8);
+  border: 3px solid rgba(21, 21, 21,0.98);
+  color:#fff;
+  margin-top:5%; 
+  width:640px;
+}
   
   .active {
     background-color: #820300;
