@@ -23,7 +23,7 @@ $(()=>{
             //Do some wacky CSS animating move the page content down (by setting the margin CSS property)
             //and fading it out by setting the opacity to zero. The '300' arugment is the amount of time
             //it should take the animation to complete in miliseconds.
-            $(`#${current}`).animate({ opacity: 0, marginTop: '15px' }, 300, ()=>{
+            $(`#${current}`).animate({ opacity: 0, marginTop: '18px' }, 300, ()=>{
 
                 //One the animation has completed, hide the current page.
                 $(`#${current}`).hide();
@@ -32,7 +32,7 @@ $(()=>{
                 current = newPage;
 
                 //Fade in the new page by again using wacky CSS animation through jQuery
-                $(`#${newPage}`).css({ opacity: 0, marginTop: '15px' }).show().animate({ opacity: 1, marginTop: '0px' }, 300, ()=>{  
+                $(`#${newPage}`).css({ opacity: 0, marginTop: '18px' }).show().animate({ opacity: 1, marginTop: '0px' }, 300, ()=>{  
                         
                     //Set switching to false so that we can change the page again (remember that this
                     //is checked in the if statement above)
