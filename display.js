@@ -11,11 +11,15 @@ $(()=>{
         //The below line gets this attribute
         let newPage = $(ev.target).data('to');
 
+        console.log(`New page: ${newPage}`)
+
         //This checks whether the 'to' attribute actually has a value, whether
         //we're already performing a page transition and whether we're already
         //on the page we're trying to transitioning to.
         if(newPage && !switching && newPage !== current){
 
+            $('#topnav a').removeClass('selected');
+            $(ev.target).addClass('selected')
             //Set switching to true so we can't switch to any other page until the
             //animation is done
             switching = true;
@@ -33,7 +37,7 @@ $(()=>{
 
                 //Fade in the new page by again using wacky CSS animation through jQuery
                 $(`#${newPage}`).css({ opacity: 0, marginTop: '15px' }).show().animate({ opacity: 1, marginTop: '0px' }, 300, ()=>{  
-                        
+
                     //Set switching to false so that we can change the page again (remember that this
                     //is checked in the if statement above)
                     switching = false;
