@@ -1,15 +1,42 @@
 function start() {
-    var display_home = document.getElementById("home");
-    var hide_about = document.getElementById("about");
-    display_home.style.display = "block";
-    hide_about.style.display = "none";
+    document.getElementById("public").style.display = "none";
+    document.getElementById("home").style.display = "block";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("partners").style.display = "none";
 
 }
 
 function about() {
-    var display_about = document.getElementById("about");
-    var hide_home = document.getElementById("home");
-    display_about.style.display = "block";
-    hide_home.style.display = "none";
+    document.getElementById("public").style.display = "none";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "block";
+    document.getElementById("partners").style.display = "none";
 
 }
+
+function public() {
+    document.getElementById("public").style.display = "block";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("partners").style.display = "none";
+
+}
+
+function partner() {
+    document.getElementById("partners").style.display = "block";
+    document.getElementById("public").style.display = "none";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "none";
+
+
+}
+
+
+/*
+    document.getElementById("partners").style.display = "block";
+    document.getElementById("public").style.display = "none";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "none";
+
+
+*/

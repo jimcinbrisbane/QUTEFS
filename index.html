@@ -1,10 +1,16 @@
-<!DocType=HTML5>
+<!--DocType=HTML5-->
 <HTML>
 
 <head>
-    <meta charset="UTF-8">
+
+    <meta name="title" content="QUT - The Economics and Finance Society - QUTEFS - Queensland University of Tecnology - QUT Business School">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Jim Chi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Economics and Finance Society (EFS) is a student run organisation. 
          EFS offers you invaluable networking opportunities with both industry professionals and students. 
          Through professional workshops, extensive networking events and seminars conducted, 
@@ -17,7 +23,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="/img/ico.png">
-    <meta name="keywords" content="QUT, QUT Business School,Brisbane, economics, club, soceities, societies, QUTEFS, finance, job, undergraduate, postgraduate, UQ, Griffith, CQU, USQ, USC, TAFE">
+    <meta name="keywords" content="QUT, QUT Business School,Brisbane, economics, club, soceities, societies, accounting, QUTEFS, finance, job, undergraduate, qutasa, qut qutasa, qut society, qut business, qut accuntancy students' association, postgraduate, UQ, Griffith, CQU, USQ, USC, TAFE">
     <script src="nav.js"></script>
     <script src="display.js"></script>
 </head>
@@ -29,12 +35,13 @@
             <i class="fa fa-bars"></i>
         </a>
         <a onclick="start()">Home</a>
-        <a href="https://github.com/jimcinbrisbane/">Publications</a>
-        <a href="https://github.com/jimcinbrisbane/">Executives</a>
+        <a onclick="public()">Publications</a>
+        <a href="#">Executives(418)</a>
         <a onclick="about()">About us</a>
-        <a href="https://github.com/jimcinbrisbane/">Partners</a>
+        <a onclick="partner()">Partners</a>
 
     </div>
+    <!--home-->>
     <div class='hero' id='home'>
         <div class='txt'>
             <div class='ico'>
@@ -42,27 +49,30 @@
             </div>
             <h1>QUT Economics and Finance Society</h1>
 
-            <a class="button" href="https://github.com/jimcinbrisbane/" title="Join us" download=""><i class="fas fa-fingerprint"></i>&nbsp;</i>Become A Member</a>
-            <a class="button" href="#first" title="Events" download=""><i class="fas fa-globe-asia">&nbsp;</i>Upcoming Events</a> </div>
+            <a class="button" href="https://www.eventbrite.com.au/e/2019-qut-economics-and-finance-society-membership-tickets-60805551040" title="Join us" download=""><i class="fas fa-fingerprint"></i>&nbsp;</i>Become A Member</a>
+            <a class="button" href=".fb-page" title="Events" download=""><i class="fas fa-globe-asia">&nbsp;</i>Upcoming Events</a> </div>
 
 
         <img class='logo' src="./img/logo-white.png" alt="QUT Economics and Finance Society"></div>
 
 
-</body>
-
-</div>
 
 
-<div class="body">
+
+    <!--About us-->
+
+
     <div id="about">
+        <script src="https://www.powr.io/powr.js?platform=html"></script>
+        <div class="powr-microblog" id="bb8c8400_1564021314"></div>
         <div class="highlight">
             <h2>About</h2>
             <p>The Queensland University of Tecnology Economics Finance Society ( QUTEFS ) is a student run organisation whose goal is to Inform, Inspire and Incorporate its members into the real world. EFS offers you invaluable networking opportunities
                 with both industry professionals and students. It is a great way to make new friends, meet new people and get your foot well within the door. EFS has one a number of awards for it’s involvement with QUT and overall success as a student
                 run society, including 2009, 2011 and 2013 QUT Club of the Year! The Economics and Finance Society (EFS) informs, inspires and incorporates its members into the real world. Through professional workshops, extensive networking events and
                 seminars conducted, EFS positions its members effectively for future employment. The Queensland University of Tecnology Economics Finance Society’s corporate partners are also given the opportunity to promote their organisation, shape
-                students and recruit new talent.</p>
+                students and recruit new talent.
+            </p>
         </div>
 
         <div class="highlight">
@@ -129,10 +139,76 @@
         </div>
 
     </div>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--Publication-->
+    <div id="public">
+
+        <div class="pubtn_div">
+            <a href="#" class="pubtn">The Review</a>
+            <a href="#" class="pubtn">The Take</a>
+            <a href="#" class="pubtn">The Guide</a>
+        </div>
+
+
+        <div class="take">
+            <div id="medium-widget" style="color: #fff"></div>
+            <script src="./blog.js"></script>
+            <script>
+                MediumWidget.Init({
+                    renderTo: '#medium-widget',
+                    params: {
+                        "resource": "https://medium.com/@krisgage",
+                        "postsPerLine": 1,
+                        "limit": 10,
+                        "picture": "small",
+                        "fields": ["description", "author", "publishAt"],
+                        "ratio": "landscape"
+                    }
+                })
+            </script>
+
+        </div>
+    </div>
+
+    <div id="partners">
+
+        <h1 style="text-align: center; "><span style="color: #be1d2c;">2017</span> <span style="color: #999999;">Corporate Partners</span></h1>
+        <p style="text-align: center;padding: 3%; "><span style="font-size: 14pt;">EFS collaborates with a variety of firms to unlock significant value for both student members and corporate partners. If you are an employee of a potential corporate partner, please feel free to peruse our <span style="color: #be1d2c;"><a style="color: #be1d2c;" href="https://drive.google.com/file/d/1V899IcMAQkiSQPalemmgWrJHHHAEVfAm/view?usp=sharing">2018 corporate proposal</a>.</span>            Alternatively, click <span style="color: #be1d2c;"><a style="color: #be1d2c;" href="mailto:%20president@qutefs.org">here</a></span> if you would like to contact the corporate relations team.</span>
+        </p>
+
+        <td style="width: 120.026px; height: 126px;    margin: auto;"> <span style="color: #ffffff;"><a href="https://www.pwc.com.au/careers/student-careers.html"><img class="aligncenter size-full wp-image-457" src="http://www.qutefs.org/wp-content/uploads/2018/02/PwC.jpg" alt="" width="200" height="200" /></a></span></td>
+
+        <td style="width: 161.693px; height: 126px;    margin: auto;"> <span style="color: #ffffff;"><a href="http://www.ey.com/au/en/careers/students"><img class="aligncenter size-full wp-image-456" src="http://www.qutefs.org/wp-content/uploads/2018/02/Picture1.jpg" alt="" width="200" height="200" /></a></span></td>
+        <td style="width: 88.3594px; height: 126px;    margin: auto;"></td>
+        <td style="width: 85.026px; height: 126px;   margin: auto;"></td>
+
+        <td style="width: 120.026px; height: 86px;    margin: auto;">
+            <a href="https://www.bdo.com.au/en-au/careers/students/students"><img class="aligncenter size-full wp-image-459" src="http://www.qutefs.org/wp-content/uploads/2018/02/BDO.jpg" alt="" width="200" height="200" /></a><span style="color: #ffffff;"><a href="https://www.grantthornton.com.au/the-grant-thornton-difference/students-and-graduates/"><img class="aligncenter size-medium wp-image-458" src="http://www.qutefs.org/wp-content/uploads/2018/02/GT-300x300.jpg" alt="" width="300" height="300" /></a></span></td>
+        <td style="width: 161.693px; height: 86px;    margin: auto;"><span style="color: #ffffff;"><a href="https://www.qic.com.au/about-qic/about-us/careers"><img class="aligncenter size-medium wp-image-480" src="http://www.qutefs.org/wp-content/uploads/2018/02/QIC-3-300x71.jpg" alt="" width="300" height="71" /></a><img class="aligncenter size-full wp-image-474" src="http://www.qutefs.org/wp-content/uploads/2018/02/CBA-1.jpg" alt="" width="175" height="175" /></span></td>
+        <td style="width: 88.3594px; height: 86px;   margin: auto;"></td>
+        <td style="width: 85.026px; height: 86px;   margin: auto;"></td>
+
+        <td style="width: 120.026px; height: 106px;   margin: auto;"> <span style="color: #ffffff;"><a href="https://www.charteredaccountantsanz.com/"><img class="size-full wp-image-460 alignnone" src="http://www.qutefs.org/wp-content/uploads/2018/02/CA-ANZ.jpg" alt="" width="198" height="198" /></a></span></td>
+        <td style="width: 161.693px; height: 106px;   margin: auto;"> <span style="color: #ffffff;"><a href="https://www.cpaaustralia.com.au/"><img class="wp-image-461 alignright" src="http://www.qutefs.org/wp-content/uploads/2018/02/CPA-1.jpg" alt="" width="210" height="210" /></a></span></td>
+        <td style="width: 88.3594px; height: 106px;   margin: auto;"></td>
+        <td style="width: 85.026px; height: 106px;   margin: auto;"></td>
+
+
+
+    </div>
+
+    <div id="contact">
+
+
+    </div>
+</body>
+
+
+
 
 
 <footer>
@@ -195,9 +271,9 @@
 
 
     <div class="social">
-        <a href="facebook.com/qutefs" title="Join us"><i class="fab fa-facebook-square"></i></a>
-        <a href="twitter.com/qutefs" title="Join us"><i class="fab fa-twitter-square"></i></a>
-        <a href="efs@qutefs.org"><i class="fas fa-envelope"></i></a>
+        <a href="https://facebook.com/qutefs" title="Join us"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/qutefs" title="Join us"><i class="fab fa-twitter-square"></i></a>
+        <a href="mailto:efs@qutefs.org"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/jimcinbrisbane/"><i class="fas fa-phone-square"></i></a>
         <p class='rights'>© 2018. Queensland University of Technology Economics and Finance Society. A wHyTho 'Jim' Chi production </p>
 
@@ -205,6 +281,7 @@
 
 
 </footer>
+
 
 
 <div id="fb-root"></div>
@@ -217,12 +294,12 @@
         box-shadow: -6px 6px rgba(143, 3, 0, 0.8);
         border: 3px solid rgba(21, 21, 21, 0.98);
         color: #fff;
-        margin-left: 10%;
+        margin-left: 15%;
         margin-bottom: 5%;
         left: -3%;
     }
 </style>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
-
+<script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
 </HTML>
