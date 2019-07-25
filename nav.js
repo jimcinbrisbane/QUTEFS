@@ -7,5 +7,3 @@ function navbar() {
         x.className = "nav";
     }
 }
-
-console.log($)
