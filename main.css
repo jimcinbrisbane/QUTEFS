@@ -491,7 +491,8 @@ p {
         font-size: 120%;
     }
     #first {
-        margin: 28%;
+        width: 28%;
+        margin: 8px;
     }
     #fourth {
         display: none;
