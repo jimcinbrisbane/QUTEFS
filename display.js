@@ -1,3 +1,5 @@
+/* This beautiful code brought to you by Jack Beringen*/
+
 let current = 'home';
 let switching = false;
 
