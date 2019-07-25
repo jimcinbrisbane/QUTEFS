@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="/img/ico.png">
     <meta name="keywords" content="QUT, QUT Business School,Brisbane, economics, club, soceities, societies, accounting, QUTEFS, finance, job, undergraduate, qutasa, qut qutasa, qut society, qut business, qut accuntancy students' association, postgraduate, UQ, Griffith, CQU, USQ, USC, TAFE">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
     <script src="nav.js"></script>
     <script src="display.js"></script>
 </head>
@@ -34,11 +39,11 @@
         <a href="javascript:void(0);" class="icon" onclick="navbar()">
             <i class="fa fa-bars"></i>
         </a>
-        <a onclick="start()">Home</a>
-        <a onclick="public()">Publications</a>
+        <a data-to='home'>Home</a>
+        <a data-to='public'>Publications</a>
         <a href="#">Executives(418)</a>
-        <a onclick="about()">About us</a>
-        <a onclick="partner()">Partners</a>
+        <a data-to="about">About us</a>
+        <a data-to="public">Partners</a>
 
     </div>
     <!--home-->>
