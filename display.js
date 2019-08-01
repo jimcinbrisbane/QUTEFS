@@ -50,6 +50,8 @@ function start() {
     document.getElementById("home").style.display = "block";
     document.getElementById("about").style.display = "none";
     document.getElementById("partners").style.display = "none";
+    document.getElementById("member").style.display = "none";
+    document.getElementById("publication").style.display = "none";
 
 }
 
@@ -58,6 +60,7 @@ function about() {
     document.getElementById("home").style.display = "none";
     document.getElementById("about").style.display = "block";
     document.getElementById("partners").style.display = "none";
+    document.getElementById("member").style.display = "none";
 
 }
 
@@ -66,11 +69,36 @@ function public() {
     document.getElementById("home").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("partners").style.display = "none";
+    document.getElementById("member").style.display = "none";
+    document.getElementById("publication").style.display = "none";
+    
 
 }
 
 function partner() {
     document.getElementById("partners").style.display = "block";
+    document.getElementById("public").style.display = "none";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("member").style.display = "none";
+    document.getElementById("publication").style.display = "none";
+    
+
+function member() {
+    document.getElementById("member").style.display = "block";
+    document.getElementById("partners").style.display = "none";
+    document.getElementById("public").style.display = "none";
+    document.getElementById("home").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("publication").style.display = "none";
+    
+
+
+}
+function publication() {
+    document.getElementById("publication").style.display = "block";
+    document.getElementById("member").style.display = "none";
+    document.getElementById("partners").style.display = "none";
     document.getElementById("public").style.display = "none";
     document.getElementById("home").style.display = "none";
     document.getElementById("about").style.display = "none";
