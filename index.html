@@ -28,20 +28,24 @@
     </script>
     <script src="nav.js"></script>
     <script src="display.js"></script>
+    <script src="pub.js"></script>
+
 
 </head>
 
-<body>
+<body style="margin: 0; border-radius: 2px">
 
     <div class="nav" id="topnav">
         <a href="javascript:void(0);" class="icon" onclick="navbar()">
             <i class="fa fa-bars"></i>
         </a>
-        <a data-to='home'>Home</a>
+        <a data-to='home' class="selected">Home</a>
         <a data-to='public'>Publications</a>
-        <a href="#">Executives(418)</a>
+        <a data-to='excutives'>Executives</a>
         <a data-to="about">About us</a>
         <a data-to="partners">Partners</a>
+        <a data-to="member">EFS Benifits 🔥</a>
+
 
     </div>
 
@@ -151,26 +155,77 @@
     <!--Publication-->
     <div id="public">
 
+
         <div class="pubtn_div">
-            <a href="#" class="pubtn">The Review</a>
-            <a href="#" class="pubtn">The Take</a>
-            <a href="#" class="pubtn">The Guide</a>
+            <a onclick="review()" class="pubtn">The Review</a>
+            <a onclick="take()" class="pubtn">The Take</a>
+            <a onclick="guide()" class="pubtn">The Guide</a>
         </div>
+        
 
 
-
-        <div class="take">
-            <a class="twitter-timeline" data-lang="en" data-theme="dark" data-link-color="#7c131d" href="https://twitter.com/QUTEFS?ref_src=twsrc%5Etfw">Tweets by QUTEFS</a>
+        <div id="take">
+            <a class="twitter-timeline" data-lang="en" data-theme="dark" data-link-color="#be1d2c" href="https://twitter.com/QUTEFS?ref_src=twsrc%5Etfw">The Take</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         </div>
+        <div id="guide">
+            <iframe src="https://e.issuu.com/embed.html?identifier=bnz11063m1tn&amp;embedType=script#32913281/68238057" style="border:none;width:100%;height:100%;" title="issuu.com" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" msallowfullscree=""></iframe>
+        </div>
+        <div id="review">
+                <ul class="reviewissues">
+                        <li class="reviewissue">
+                          <div>
+                            <h3><a href="https://e.issuu.com/embed.html#32913281/64554344"><img src="/img/5.jpg"><br><span class="__title_text">Issue 5</span>
+                            </a></h3>
+                            <p></p>
+                          </div>
+                        </li>
+                        <li class="reviewissue">
+                          <div>
+                            <h3><a href="https://e.issuu.com/embed.html?identifier=de1xvg4ba4n9&embedType=script#32174522/56709283"><img src="img/4.jpg"><br><span class="__title_text"> Issue 4</span>
+                            </a></h3>
+                            <p></p>
+                          </div>
+                        </li>
+                        <li class="reviewissue">
+                          <div>
+                            <h3><a href="https://e.issuu.com/embed.html?identifier=9p5f3ynmbyty&amp;embedType=script&amp;u=qutefs&amp;d=qutefs_review_issue_3_may2016_final&amp;p=1"><img src="img/3.jpg"><br><span class="__title_text">Issue 3</span>
+                            </a></h3>
+                            <p></p>
+                          </div>
+                        </li>
+                        <li class="reviewissue">
+                          <div>
+                            <h3><a href="https://e.issuu.com/embed.html?identifier=kokarrsf4a10&amp;embedType=script&amp;u=qutefs&amp;d=qutefs_review_issue_2_october2015&amp;p=1"><img src="img/2.jpg"><br><span class="__title_text">Issue 2</span>
+                            </a></h3>
+                            <p></p>
+                          </div>
+                        </li>
+                        <li class="reviewissue">
+                          <div>
+                            <h3><a href="https://e.issuu.com/embed.html?identifier=q5gjyyzvn9r1&amp;embedType=script&amp;u=qutefs&amp;d=efs_publication_final_corrected_ver&amp;p=1">
+                                <img src="img/1.jpg"><br><span class="__title_text">Issue 1</span></a>
+                            </h3>
+                            <p></p>
+                          </div>
+                        </li></ul>
+
+
+                    </div>
+                    <p style="color: #fff; width: 72%; margin: 32px auto auto auto;">If you have any questions or feedback about The Review, The Take or The Guide, please feel free to contact our QUTEFS publications director <a href="mailto: publications@qutefs.org" target="_blank" rel="noopener"></a></p>
+
+
     </div>
+
+    </div>
+
 
     <div id="partners">
 
         <h1 style="text-align: center; "><span style="color: #7c131d;">2017</span> <span style="color: #999999;">Corporate Partners</span></h1>
         <p style="text-align: center;padding: 3%; "><span style="font-size: 14pt;">EFS collaborates with a variety of firms to unlock significant value for both student members and corporate partners. If you are an employee of a potential corporate partner, please feel free to peruse our <span style="color: #7c131d;"><a style="color: #7c131d;" href="https://drive.google.com/file/d/1V899IcMAQkiSQPalemmgWrJHHHAEVfAm/view?usp=sharing">2018 corporate proposal</a>.</span>            Alternatively, click <span style="color: #7c131d;"><a style="color: #7c131d;" href="mailto:%20president@qutefs.org">here</a></span> if you would like to contact the corporate relations team.</span>
-        </p> #se
+        </p> 
 
         <td style="width: 120.026px; height: 126px;    margin: auto;"> <span style="color: #ffffff;"><a href="https://www.pwc.com.au/careers/student-careers.html"><img class="aligncenter size-full wp-image-457" src="http://www.qutefs.org/wp-content/uploads/2018/02/PwC.jpg" alt="" width="200" height="200" /></a></span></td>
 
@@ -197,6 +252,242 @@
 
 
     </div>
+
+
+    <div id="excutives">    
+        <ul class="excs">
+              <li class="exc">
+                <div>
+                  <h3><img src="/img/Alex.jpg"><br><span class="__title_text">President: Alex Conroy</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/heath.jpg"><br><span class="__title_text"> Vice President: Heath Gabbet</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/eugene.jpg"><br><span class="__title_text">Treasurer: Eugene Mastromattei</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/adir.jpg"><br><span class="__title_text">Corporate Relations Directors: Adir Salem (image unavliable)</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/emily.jpg"><br><span class="__title_text">Corporate Relations Directors:  Emily Reynolds</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/kenten.jpg"><br><span class="__title_text">Corporate Relations Directors: Kenten Leo </span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/georgie.jpg"><br><span class="__title_text">Design Director: Georgie Vine</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/liqing.jpg"><br><span class="__title_text">Marketing Directors: Liqing Zhang</span>
+                  </h3>
+                  <p></p>
+                </div>
+              </li>
+              <li class="exc">
+                <div>
+                  <h3><img src="img/michael.jpg"><br><span class="__title_text">Events Director: Michael Gibson</span>
+                  </h3>
+                <p></p>
+                </div>
+              </li>
+                    <li class="exc">
+                <div>
+                  <h3><img src="img/candy.jpg"><br><span class="__title_text">Publications Director: Trent Candy</span>
+                  </h3>
+                <p></p>
+                </div>
+              </li>
+                    <li class="exc">
+                <div>
+                  <h3><img src="img/shea.jpg"><br><span class="__title_text">Publications Officer: Michael O'Shea.</span>
+                <p></p>
+                  </h3>
+                </div>
+              </li>
+        
+              
+            
+        
+              </li>
+              
+            </ul>
+          </div>
+
+
+<div id="member">
+        <h2 style="width: 60%; margin:68px auto auto auto; text-allign: center; color: white; ">
+                QUT Economics and Finance Society partnered with UQES(UQ Economics Society) to provide EFS's member with access to discounts, special offers or express entry 
+                at various restaurants, entertainment venues, retail stores and other establishments around Brisbane.
+                <a href="https://www.eventbrite.com.au/e/2019-qut-economics-and-finance-society-membership-tickets-60805551040"style="text-allign=center;margin=auto; color:#be1d2c;">Click HERE TO JOIN</h4>
+
+            </a>
+            </h2>
+   
+
+    <ul class="rede">
+            <li class="redeinfo">
+              <div>
+                  <h3>Bars & Clubs</h3>
+                  <div class="et_pb_text_inner">
+					
+                        <p><strong>Birdees:</strong> Free Entry on Saturday Nights before 11pm (+1 friend); 5 Pizzas between 6pm-9pm Thursday/Friday and Saturday</p>
+                        <p><strong>Finn McCool’s:</strong> Free entry infill 11pm at retros fortitude valley on Fridays and Saturdays</p>
+                        <p><strong>Fridays:</strong> Free entry before Midnight</p>
+                        <p><strong>Greaser:</strong> enquire instore for more information</p>
+                        <p><strong>Indooroopilly Hotel:</strong> Free room hire* Ts&amp;Cs apply</p>
+                        <p><strong>Lost Bar &amp; Nightclub – known as ‘Shades’</strong>: Free entry on Thursday nights and Fridays nights – unless ticketed event (special deal can be organised for UQES members); Free entry Saturday nights before 11pm and Half price after 11pm; Enquire instore for more information</p>
+                        <p><strong>Our Place:</strong> FREE entry; provide free wrists bands and benefits for students who arrive before 11pm on Thursdays and Fridays; enquire instore for more information</p>
+                        <p><strong>Prohibition:</strong> Express entry</p>
+                        <p><strong>Retro’s Fortitude Valley:</strong> Free entry until 11pm at on Fridays and Saturdays</p>
+                        <p><strong>RG’s:</strong> Free 12inch pizza Monday-Thursday until 9pm</p>
+                        <p><strong>The Royal Exchange Hotel: </strong>$10 Parmi &amp; pot deal 7 days a week; VIP Q-jump Wed &amp; Sun until 9:30 pm</p>
+                        <p><strong>The Victory Hotel (‘The VIC’):</strong> Express entry</p>
+                        <p><strong>XY2 Bar:</strong> Free entry into XY2 Bar on all open nights (excluding new years); Enquire instore for more information</p>
+                        
+                                        </div>
+
+
+              </div>
+            </li>
+            <li class="redeinfo">
+              <div>
+                  <h2>Food & Drink</h2>
+                  <div class="et_pb_text_inner">
+					
+                        <p><strong>218 Chinese Style Restaurant:</strong> Free sour plum juice with any rice dish/ noodles dish purchased</p>
+                        <p><strong>4fingers (Albert Street + Chermside):</strong> 15% off final bill</p>
+                        <p><strong>Avid Kitchen + Garden:</strong> 10% discount</p>
+                        <p><strong>Bean on Boundry (West End):</strong> Large coffee for price of a small; $1 off selected drinks (ask instore); free birthday drink</p>
+                        <p><strong>Bean. Cafe + Bar (City):</strong> Large coffee for price of a small; $1 off selected drinks (ask instore); free birthday drink</p>
+                        <p><strong>Belltop:</strong> Free drink upsize</p>
+                        <p><strong>Big Roddys Rippin’ Rib Shack:</strong> 10% discount on all purchases</p>
+                        <p><strong>Buffalo Bar (CBD):</strong> $15 burgers; Enquire instore for more information</p>
+                        <p><strong>Burger Time 69:</strong> 10% discount on all purchases, $9.90 cheese burgers</p>
+                        <p>chicken and chips; Enquire instore for more information</p>
+                        <p><strong>Chu The Phat:</strong> 25% off their total bill(up to a value of $35)</p>
+                        <p><strong>Coming Home Co:</strong> 12 oz coffee for $3; 16oz coffee for $4</p>
+                        <p><strong>Cowch (Broadbeach):</strong> 10% discount on all purchases</p>
+                        <p>discount code, including: $5 off first Fritzen App Order; $1 off every burger</p>
+                        <p><strong>Dragon Fired Pizza:</strong> 15% discount on all purchases</p>
+                        <p><strong>Fritzenberger Frites &amp; Brew Pub (Petrie Terrace + Wilston):</strong> Access to deals through Fritzen App with “FRITZENUNI”</p>
+                        <p><strong>Gelatissimo (CBD):</strong> 10% off total bill</p>
+                        <p><strong>Harajuku Gyoza (All Locations):</strong> 10% off all menu items</p>
+                        <p><strong>Hogs Breath Café (Indooroopilly):</strong> 20% off (Not valid with frequent dinner/Hog squad card or any other offer or discount)</p>
+                        <p><strong>Hokkaido Baked Cheese Tart (Garden City):</strong> $19.80 for any 6 tarts, Any 2 tarts with a free soft serve</p>
+                        <p><strong>Jojos:</strong> 15% discount off their total bill to a maximum value of $45.00 per visit</p>
+                        <p><strong>KaiKai Chicken:</strong> FREE iced tea with every purchase of standard/deluxe buffet; $10 chicken Karaage, $10 4pc friend</p>
+                        <p><strong>Lord of the Wings:</strong> 10% discount at all stores</p>
+                        <p><strong>Nitrogenie:</strong> 15% discount on all menu items</p>
+                        <p><strong>Pancake Manor (CBD):</strong> 10% off all food and drinks excluding alcohol and not in conjunction with other offers</p>
+                        <p><strong>PappaRoti (Warrigal Square):</strong> 5% discount on all normal priced menu items</p>
+                        <p><strong>Rib Shack:</strong> 10% discount off menu items</p>
+                        <p><strong>Salt Meats Cheese:</strong> 15% discount on food and drinks</p>
+                        <p><strong>San Churro (Toowong):</strong> 10% of all menu items</p>
+                        <p><strong>Schnitz (Garden City):</strong> 10% discount on total transaction</p>
+                        <p><strong>Schnitz (Newmarket):</strong> 10% discount in store</p>
+                        <p><strong>Seoul Bistro:</strong> 10% discount on all menu items</p>
+                        <p><strong>Suburban Social:</strong> 15% off the total dine in bill; 20% off total take away (pick up only) bill</p>
+                        <p><strong>Suburban West End:</strong> 10% discount on all menu items</p>
+                        <p><strong>Tavalon Tea:</strong> 5% discount on total bill</p>
+                        <p><strong>The Elephant Hotel:</strong> Enquire instore for more information</p>
+                        <p><strong>The Foundry:</strong> <strong><em>Enquire instore for more information</em></strong></p>
+                        <p><strong>The Paddo Tavern:</strong> $3 Garlic Breads; $4 bacon garlic bread valid after 12pm everyday until midnight; Enquire instore for more information</p>
+                        <p><strong>Tutti Frutti Frozen Yoghurt (Robina):</strong> 10% off per transaction all items in store</p>
+                        <p><strong>Zambrero (Strathpine + Toowong):</strong> 10% off</p>
+                        <p><strong>Zarraffas (Toowong):</strong> Free shot of expresso or free beverage upsize</p>
+                        <p><strong>Ze Pickle (Camp Hill):</strong> 10% off discount on food purchases</p>
+                        <p><strong>Zeus Street Greek (Robina):</strong> 10% off total bill (up to $20 discount); 1 free serve of Honey Loukoumades (Greek doughnut) only after spending $20</p>
+                        
+                                        </div>
+                   
+              </div>
+            </li>
+
+            <li class="redeinfo">
+                    <div>
+                        <h3>Fitness</h3>
+                        <div class="et_pb_text_inner">
+					
+                                <p><strong>Anytime Fitness (Rocklea):</strong> $0 start-up fee (usually $99) + $1 off each week from standard membership fees</p>
+                                <p><strong>Brisbane Boxing (West End):</strong> 10% all membership options</p>
+                                <p><strong>Dundee’s Boxing &amp; Fitness:</strong> 15% off one on one sessions, buy one get one free for group sessions</p>
+                                <p><strong>F45 (Indooroopilly):</strong> 30% off casual memberships</p>
+                                <p><strong>F45 (Toowong + Paddington):</strong> 15% off memberships and 2 free weeks upon becoming a member</p>
+                                <p><strong>Fitness First (CBD):</strong> Enquire instore for details</p>
+                                <p><strong>Fitness First (Indooroopilly + Toowong):</strong> 20% off memberships</p>
+                                <p><strong>Insurgence Fitness (Taringa): </strong>2 weeks free, $5 off any membership weekly fee</p>
+                                <p><strong>Jetts (Kenmore): </strong>$0 joining fee (usually $89), $10 access pass (usually $69), complimentary PT session</p>
+                                <p><strong>Stepz Fitness (St Lucia):</strong> 15% off student memberships</p>
+                                <p><strong>Stepz Fitness (Toowong):</strong> <em>Enquire instore for details</em></p>
+                                <p><strong>TotalFusion Platinum Newstead: </strong>Discounted membership options. Enquire instore for further information</p>
+                                <p><strong>World Gym:</strong> $9.95 per week, no joining fees, card fees or contract. Minimum 30 days with 30 days notice to cancel</p>
+                                
+                                                </div>
+      
+      
+                    </div>
+                  </li>
+
+                  <li class="redeinfo">
+                        <div>
+                            <h3>Other</h3>
+                            <div class="et_pb_text_inner">
+					
+                                    <p><strong>7 Square Australia: </strong>20% discount with “UQ STUDENT” discount code, pick up from UQ to save on shipping!<br> <strong>Aquolia Hair (Design and Care): </strong>15% off all services during weekdays</p>
+                                    <p><strong>Black Jack Suiting:</strong> 15% discount</p>
+                                    <p><strong>Brisbane Whale Watching:</strong> 10% discount on what watching adventures</p>
+                                    <p><strong>East Coast Hattitude:</strong> 10% discount on all purchases</p>
+                                    <p><strong>Elizabeth Picture Theatre: </strong>$8 student tickets</p>
+                                    <p><strong>Ella Baché (Toowong):</strong> 20% discount on all services</p>
+                                    <p><strong>Holy Moley:</strong> $8 9-hole games instead of $18 from Sunday to Thursdays</p>
+                                    <p><strong>New Farm Six Cinemas (Five Star Cinema):</strong> <em>Discount tickets and free tickets in goodie bag</em></p>
+                                    <p><strong>Old Mate’s Barber &amp; Grooming:</strong> $25 student cut or a full cut for $27 provided it is a standard cut</p>
+                                    <p><strong>Palace Cinemas (Barracks + Fortitude Valley):</strong> $10 student tickets</p>
+                                    <p><strong>Photogenia (Chelmer): </strong>A professional headshot (Edited and retouched): $49 (GST included), 15% discount on all our&nbsp;advertised packages on <span><a href="http://www.photogenia.com.au">www.photogenia.com.au</a></span>. Family members of the cardholder also entitled to this discount</p>
+                                    <p><strong>QU Books:</strong> 2.5% off 1st year textbooks</p>
+                                    <p><strong>Riverlife Brisbane:</strong> 20% student discount off all experiences</p>
+                                    <p><strong>Strike Bowling (Wintergarden):</strong> $8 bowling and laser tag (SunàThu before 5PM), $15 all access deal uni night (Wed) + more</p>
+                                    <p><strong>The Print Bar Australia:</strong> 15% coupon code (REDE)</p>
+                                    <p><strong>TimeWeave:</strong> Unlock weave feature within app for UQES members</p>
+                                    
+                                                    </div>
+          
+          
+                        </div>
+                      </li>
+    
+    
+
+</div>
 </body>
 
 
@@ -289,9 +580,9 @@
         box-shadow: -6px 6px #7c131d;
         border: 3px solid rgba(21, 21, 21, 0.98);
         color: #fff;
-        margin: 1%;
-        margin-top: 8px;
-        padding: 1%;
+        margin: 5%;
+        margin-top: 32px;
+        padding: 0%;
     }
 </style>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
