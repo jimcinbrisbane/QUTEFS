@@ -240,7 +240,7 @@
     .social a {
         text-decoration: none;
         color: #fff;
-        margin: 1% 1% 1% 1%;
+        margin: 1%;
         font-size: 210%;
         display: inline-block;
         padding: 1%;
@@ -249,7 +249,6 @@
     .social a:hover {
         text-decoration: none;
         color: #be1d2c;
-        margin: 1% 1% 1% 1%;
         transition: all 0.5s ease;
     }
     /*navagation bar responsive & animation bundle*/
@@ -475,20 +474,20 @@
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        color: white;}
+        color: white;
+    }
     .exc {
     
         width: 100%;
         max-width: 350px;
-        padding: 20px;
-        margin: 0 20px 20px 20px;
         color: white;
+        
+        
         
     
     }
     #excutives{
-      width: 90%; 
-      margin:auto;
+      width: 98%; 
       text-align: center;
       display: none;
     }
